@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task & Earn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Task & Earn</h1>
+      <div class="header__balance">
+        <svg class="header__balance-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2V7zm0 8h-2v2h2v-2z"/>
+        </svg>
+        <span id="balance">0</span>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="tasks">Tasks</div>
+      <div class="tab" data-tab="rewards">Rewards</div>
+      <div class="tab" data-tab="leaderboard">Leaderboard</div>
+    </div>
+
+    <div id="tasks-tab" class="tab-content active">
+      <!-- Tasks content will be loaded here -->
+    </div>
+
+    <div id="rewards-tab" class="tab-content">
+      <!-- Rewards content will be loaded here -->
+    </div>
+
+    <div id="leaderboard-tab" class="tab-content">
+      <!-- Leaderboard content will be loaded here -->
+    </div>
+  </div>
+</body>
+</html>
